@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa CEP</title>
+    
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Pesquisa CEP</h1>
+    <div class="pesquisa">
+        <input placeholder="Digite o CEP" id="cep" />
+        <button type="button" onclick="consultaCEP()">Consultar CEP</button> <br> <br>
+    </div>
+
+    <table>
+        <tr><td>CEP</td><td class="resposta" id="cepPesquisado"></td></tr>
+        <tr><td>Logradouro</td><td class="resposta" id="logradouro"></td></tr>
+        <tr><td>Bairro</td><td class="resposta" id="bairro"></td></tr>
+        <tr><td>Complemento</td><td class="resposta" id="complemento"></td></tr>
+        <tr><td>Cidade</td><td class="resposta" id="localidade"></td></tr>
+        <tr><td>UF</td><td class="resposta" id="uf"></td></tr>
+        <tr><td>DDD</td><td class="resposta" id="ddd"></td></tr>
+    </table>
+</body>
+</html>
